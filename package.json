@@ -1,0 +1,21 @@
+{
+    "name": "flights",
+    "version": "0.1.0",
+    "description": "TypeScript CLI for searching Google Flights via SerpAPI (multi-month, open-jaw, price/stops filters)",
+    "type": "module",
+    "bin": {
+        "flights": "./src/cli.ts"
+    },
+    "scripts": {
+        "flights": "node src/cli.ts",
+        "typecheck": "tsc --noEmit",
+        "test": "node --test test/*.test.ts"
+    },
+    "engines": {
+        "node": ">=23.6"
+    },
+    "devDependencies": {
+        "typescript": "^5.8.3",
+        "@types/node": "^24.0.0"
+    }
+}
